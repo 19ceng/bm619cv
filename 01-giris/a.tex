@@ -49,25 +49,25 @@
 	\begin{itemize}
 		\item anlamı nedir? görmek mi? baktığımız yerdeki şeyi tanımlamak
 		\item resimlerden neyi çıkarabiliriz?
-		\item :: ne var?
-		\item :: nerede?
-		\item :: ne yapıyor?
+		\item :: ne olduğunu?
+		\item :: nerede olduğunu?
+		\item :: ne yaptığını?
 	\end{itemize}
 }
 
 \frame {
 	\frametitle {Bilgisayarla Görü Nedir?}
 
-	\begin{itemize}
+	\begin{itemize}[<+->]
 		\item Trucco and Verri: bir veya daha fazla resimden 3d dünyanın
 		özelliklerini hesaplamak. Örnek: arabanın rengi, hızı
-
+		\medskip
 		\item Stockman and Shapiro: algılanan resmi baz alarak gerçek fiziksel
 		nesneler ve sahne hakkında faydalı kararlar üretmektir. Örnek: hız limiti aşıldı
-
+		\medskip
 		\item Ballard and Brown: resimden fiziksel nesnelerin net, anlamlı
 		tanımlar oluşturmaktır. Örnek: arabanın modeli: BMW
-
+		\medskip
 		\item Forsyth and Ponce: resimler veya resimler serilerinden dünyaya ait
 		tanımlayıcıları çıkartmak. Örnek: arabanın türü: oto
 	\end{itemize}
@@ -77,8 +77,11 @@
 	\frametitle {Resimden ne tür bilgi çıkarılabilir?}
 
 	\begin{itemize}
-		\item Metrik 3d bilgi: derinlik, yükseklik, alan vs
-		\item Anlamsal bilgi: ağaç, ev, hareketli, insan vs
+		\item \textbf{Metrik} 3d bilgi: derinlik, yükseklik, alan vs
+
+		\medskip
+
+		\item \textbf{Anlamsal} bilgi: ağaç, ev, hareketli, insan vs
 	\end{itemize}
 }
 
@@ -118,6 +121,7 @@
 	\begin{columns}
 		\column{0.5\textwidth}
 			\includegraphics[width=0.9\textwidth]{img/05-mean.png}
+			\pause
 		\column{0.5\textwidth}
 			Siyah arkaplan; iki nesne: çaydanlık, oyuncak; ışık sağdan geliyor;
 			birisi parlak diğeri mat; Oyuncak: 5 katlı, farklı renkler, yazı
@@ -133,6 +137,7 @@
 	\begin{columns}
 		\column{0.5\textwidth}
 			\includegraphics[width=0.9\textwidth]{img/06-what-see.png}
+			\pause
 		\column{0.5\textwidth}
 			\begin{itemize}
 				\item adam eli
@@ -147,7 +152,7 @@
 
 	Görü faydalıdır: resimler ve video heryerde!
 
-	\includegraphics[width=0.9\textwidth]{img/08-why.png}
+	\includegraphics[width=0.95\textwidth]{img/08-why.png}
 }
 
 \frame {
@@ -175,8 +180,11 @@
 
 	\begin{itemize}
 		\item görü \textbf{faydalıdır}
+		\medskip
 		\item görü \textbf{ilginçtir}
+		\medskip
 		\item görü \textbf{zordur}
+		\medskip
 	\end{itemize}
 }
 
@@ -433,7 +441,7 @@
 \frame {
 	\frametitle {synth}
 
-	\includegraphics[height=0.9\textheight]{img/34-synt.png}
+	\includegraphics[height=0.7\textheight]{img/34-synt.png}
 }
 
 \frame {
@@ -564,6 +572,219 @@
 	\includegraphics[width=0.9\textwidth]{img/42-medical.png}
 }
 
+\frame {
+	\frametitle {Tanıma: bilgisayarın insan gibi davranması}
+
+	"düşük-seviyeli" metriklerin bir araya gelerek bize neyi söylediğini algısal
+	anlamda organize edecek araç $->$ tanıma.
+
+	\medskip
+
+	Çok sayıda ipucu var
+
+	\begin{itemize}
+		\item çoklu görüş (hareket, stereo)
+		\item doku, doğrusallık, gölge, benzerlik, ...
+	\end{itemize}
+
+	\medskip
+
+	Detektif olacaksınız.
+}
+
+\frame {
+	\frametitle {Tanımada karşılaşılan güçlükler?}
+
+	\begin{itemize}
+		\item Hangi bitler birlikte değerlendirilmeli? \pause
+		\item :: \textbf{bölütleme} (segmentation)
+		\item Ayrıntılarına odaklanmaksızın nesneler nasıl tanınabilir? \pause
+		\item :: \textbf{soyutlama} (Abstraction)
+		\item Çok sayıda serbestlik derecesi olan nesneler nasıl tanınabilir? \pause
+		\item :: popüler bir ismi \textbf{yok}, fakat hayati bir problemdir.
+	\end{itemize}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p01.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p02.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p03.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p04.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p05.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.75\textwidth]{img/p06.png}
+
+	Muhtemel yaklaşım: çizgi çizmek tanımamızı kolaylaştıracaksa, önce çizgileri
+	bulmak
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	Çizgi çizmek mi?
+
+	\includegraphics[width=0.9\textwidth]{img/p07.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	yoksa kenar algılamak mı?
+
+	\includegraphics[width=0.9\textwidth]{img/p08.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	Kenar algılama - parametreleri
+
+	\includegraphics[width=0.9\textwidth]{img/p09.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p10.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p11.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p12.png}
+}
+
+\frame {
+	\frametitle {Şablon Eşleme}
+
+
+	\begin{itemize}
+		\item bazı nesneler 2d örüntüye sahiptir
+		\item :: ör. yüzler
+		\medskip
+
+		\item belli bir örüntü eşleyiciyi inşa etmek
+		\item :: parametrik modeli kullanarak ışıklanmadaki değişimleri
+		indirgemeli
+		\item :: arkaplandaki değişimler - zor
+		\item :: kamera konumundaki değişimler - zor
+	\end{itemize}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p13.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p14.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	yüzü bulmak için farklı yaklaşım:
+
+	\begin{itemize}
+		\item önce göz, burun, ağız bul
+		\item sonra bu üç bileşen doğru yerleşmiş mi?
+	\end{itemize}
+
+	\includegraphics[width=0.9\textwidth]{img/p15.png}
+}
+
+\frame {
+	\frametitle {Tanıma}
+
+	\begin{columns}
+		\column{0.5\textwidth}
+		\includegraphics[height=0.9\textheight]{img/p16.png}
+
+		\column{0.5\textwidth}
+		Parçaların konumsal ilişkileri ne kadar esnek?
+	\end{columns}
+}
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p17.png}
+	Bu resimdeki terslik nedir?
+}
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p18.png}
+}
+\frame {
+	\frametitle {Tanıma}
+
+	\begin{columns}
+		\column{0.5\textwidth}
+			Modeliniz nedir?
+			\medskip
+			Ne kadar iyi?
+
+		\column{0.5\textwidth}
+			\includegraphics[width=0.9\textwidth]{img/p19.png}
+	\end{columns}
+}
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p20.png}
+}
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p21.png}
+}
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p22.png}
+	Kişi olabilir mi? \pause
+	İki slayttaki blob aynı, fakat 90 derece dönmüş
+}
+\frame {
+	\frametitle {Tanıma}
+
+	\includegraphics[width=0.9\textwidth]{img/p23.png}
+}
 \frame {
 	\frametitle {early}
 
