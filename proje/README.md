@@ -1,5 +1,7 @@
 ## Potansiyel Konular
 
+Güncel hali için: <https://github.com/19/asid/issues#issue/4/>
+
 ### Şüpheli Durum
 
 - @ilke: samudin09: [Analysis of Gait Features between Loaded and Normal
@@ -7,6 +9,18 @@
 
 - @ilke: otsu08-patent: [Abnormal Action Detector and Abnormal Action Detecting
   Method][otsu08-patent]
+
+## Abnormality
+
+- rohila10: [Abnormal Gait Recognition][rohila10]
+
+- bauckhage09: [Detecting Abnormal Gait][bauckhage09]
+
+## Forensic
+
+- larsen08: [Gait Analysis in Forensic Medicine][larsen08]
+
+- nixon10: [On the use of Biometrics in Forensics: Gait and Ear][nixon10]
 
 ### Sınıflandırılmamış
 
@@ -50,7 +64,7 @@ Potansiyel konu başlıkları:
 - Videodaki hareketli nesnenin (örneğin insan) algılanması ve bir güneş modeli
   oluşturularak soft gölge eklenmesi
 
-### Referanslar
+<!-- Referanslar -->
 
 [samudin09]:            http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5634017
 [otsu08-patent]:        http://www.freepatentsonline.com/20080123975.pdf
@@ -58,3 +72,7 @@ Potansiyel konu başlıkları:
 [kampus-dışı-erişim]:   http://kutuphane.omu.edu.tr/kampusdisierisim.htm
 [IEEexplore]:           http://ieeexplore.ieee.org
 [ScienceDirect]:        http://www.sciencedirect.com
+[rohila10]:             http://www.enggjournals.com/ijcse/doc/IJCSE10-02-05-51.pdf
+[bauckhage09]:          http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1443142
+[larsen08]:             http://onlinelibrary.wiley.com/doi/10.1111/j.1556-4029.2008.00807.x/pdf
+[nixon10]:              http://www.eurasip.org/Proceedings/Eusipco/Eusipco2010/.../1569292301.pdf
