@@ -1,0 +1,6 @@
+Images in this directory are a hand-picked set from the Caltech faces dataset.
+They are chosen to be more difficult than the standard dataset, as the more challenging images 
+have been selected, exhibiting greater scale and illumination changes than normal.
+
+R.Fergus 8/10/05
+
